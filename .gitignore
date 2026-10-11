@@ -1,0 +1,60 @@
+# Local tools, secrets and operating-system metadata
+.DS_Store
+._*
+.idea/
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Python/build artifacts; keep the CUDA/C++ source and build scripts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.mim/
+build/
+dist/
+*.so
+*.dylib
+*.o
+*.a
+
+# Dataset blobs and generated annotations, not the datasets/ source package
+/data/
+/test/data/
+/mmdetection3d/tests/data/
+*.pkl
+*.pickle
+*.bin
+*.pcd
+*.npy
+*.npz
+
+# Weights, predictions, logs and visualizations
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+outputs/
+logs/
+lightning_logs/
+events.out.tfevents*
+*.log
+/crn_feature_visualizations/
+/feature_vis/
+/vis/
+/vis_RC*/
+/exported_samples/
+/exported_scenes/
+/output.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
